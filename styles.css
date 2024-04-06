@@ -1,0 +1,156 @@
+*{
+    font-family: Roboto;
+}
+
+
+header p{
+    padding: 0px 80px;
+    font-weight:800;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 80px;
+}
+
+ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+}
+
+ul li a:hover{
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 0 40px;
+    justify-content:space-between;
+}
+
+h1{
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+}
+
+
+.about, .photo {
+    flex: 1;
+}
+
+.about {
+     padding-right: 20px;  /*Agrega espacio entre las columnas  */
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1121px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 0 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+
+.photo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+hr{
+    color: rgb(179, 4, 4);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    margin: 0px 80px;
+}
+
+
+footer div a{
+    margin-right: 20px;
+    color: black;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0;
+    align-items: center;
+}
+
+footer div{
+    padding-right: 20px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+
+footer ul li i{
+    margin-right: 20px;
+    color: gray;
+}
+
+footer ul li i:hover{
+    padding: 5px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+
+th, td{
+    padding: 5px 30px;
+}
+
+
+
+@media screen and (max-width: 591px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+        margin: 0px 80px;
+    }
+
+    footer div{
+        padding-right: 20px;
+        color: gray;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+   }
